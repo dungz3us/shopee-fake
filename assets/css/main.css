@@ -20,7 +20,7 @@
 .header__navbar-item,
 .header__navbar-item-link{
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 400;
@@ -57,10 +57,11 @@
     top: calc(100% + 50%);
     border-radius: 4px;
     display: none;
-    animation: qrcodeIN ease-in .3s;
+    animation: COMEIN ease-in .3s;
 }
 .header__qr-img{
     width: 100%;
+
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
@@ -88,8 +89,13 @@
     border-radius: 4px;
     background-color: white;
     display: none;
-
+    transform-origin: 95% 0;
+    animation: Notigrow ease-in .2s;
+    will-change: opaciy, transform;
+    cursor: default;
 }
+
+
 .on-noti:hover .header__noti{
     display: block;
 }
@@ -101,9 +107,11 @@
     color: #c0c0c0;
     margin: 0;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 40px;
     margin-left: 12px;
+    cursor: text;
+    /* user-select: none; */
 }
 .header__noti-list{
     padding-left: 0;
@@ -140,24 +148,28 @@
     color: black;
     margin-top: 2px;
     margin-bottom: 5px;
-
+    line-height: 1.8rem;
 }
 .header__noti-desc{
     /* display: block; */
     margin-top: 5px;
     font-size: 1.2rem;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
     color: #756f6e;   
 }
 .header__noti-footer{
     border-top: 1px solid whitesmoke;
     height: 48px;
 }
-.header__noti-footer h3{
+.header__noti-footer a{
+    text-decoration: none;
+
+}
+.header__noti-footer a h3{
     margin: 0;
     color: black;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-align: center;
     line-height: 48px;
 }
@@ -165,6 +177,40 @@
     position: absolute;
     width: 100%;
     height: 35px;
+    content: "";
+    display: block;
+    left: 0;
+    top: -20px;
+}
+/* language */
+.header__language{
+    position: absolute;
+    top: 150%;
+    right: 8px;
+    width: 170px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    background-color: white;
+    display: none;
+}
+.header__language-list{
+    padding-left: 0;
+}
+.header__language-item{
+    color: black;
+    list-style: none;
+    padding: 12px ;
+}
+.header__language-item:hover{
+    color: var(--primary-color);
+}
+.on-language:hover .header__language{
+    display: block;
+}
+.header__language::before{
+    position: absolute;
+    width: 100%;
+    height: 30px;
     content: "";
     display: block;
     left: 0;
