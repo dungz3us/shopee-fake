@@ -200,6 +200,7 @@
     color: black;
     list-style: none;
     padding: 12px ;
+    font-weight: 350;
 }
 .header__language-item:hover{
     color: var(--primary-color);
