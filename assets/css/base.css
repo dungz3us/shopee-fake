@@ -67,7 +67,8 @@ html {
     right: 0;
     left: 0;
     bottom: 0;
-    display: flex;
+    /* display: flex; */
+    display: none;
 }
 .modal__overlay{
     position: absolute;
@@ -79,7 +80,6 @@ html {
     
 }
 .modal__body{
-    
     background-color: var(--white-color);
     margin: auto;
     z-index: 1;
