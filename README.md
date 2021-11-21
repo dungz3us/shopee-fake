@@ -1,2 +1,2 @@
 # shopee-fake
-a clone op shopee that i made
+a clone of shopee that i made
