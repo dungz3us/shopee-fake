@@ -3,7 +3,7 @@
 }
 
 .header{
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0, #f6422e, #f7432e);
 }
 .header__navbar{
@@ -326,3 +326,32 @@
     color: var(--primary-color);
 }
 /* modal-end */
+/* header with search */
+.header__search{
+    height: var(--header-search-height);
+    display: flex;
+    align-items: center;
+}
+.header__search-logo{
+    width: 250px;
+    
+}
+.header-logo-img{
+    width: 220px;
+}
+.header__search-search{
+    background-color: var(--white-color);
+    flex: 1;
+    height: 40px;
+    border-radius: 2px;
+}
+.header__search-cart{
+    margin: 0 10px;
+    width: 70px;
+    text-align: center;
+}
+.header-cart-icon{
+    margin-top: 4px;
+    color: white;
+    font-size: 2.6rem ;
+}
