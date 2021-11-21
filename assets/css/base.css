@@ -50,13 +50,23 @@ html {
     }
 }
 
-@keyframes Notigrow {
+@keyframes growth {
     from{
         transform: scale(0);
         opacity: 0;
     }
     to{
         transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes growthbig {
+    from{
+        transform: scale(var(--growth-from));
+        opacity: 0;
+    }
+    to{
+        transform: scale(var(--growth-to));
         opacity: 1;
     }
 }
@@ -68,6 +78,7 @@ html {
     left: 0;
     bottom: 0;
     display: flex;
+    animation: grow linear 0.1s;
 }
 
 .modal__overlay{
@@ -80,9 +91,11 @@ html {
     
 }
 .modal__body{
+    --growth-from: 0.7;
+    --growth-to: 1;
     margin: auto;
     z-index: 1;
-
+    animation: growthbig linear 0.1s ;
 }
 /* button */
 .btn--disable{
@@ -106,6 +119,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 1.6rem;
 }
 .btn.btn-normal:hover{
     background-color: rgba(0, 0, 0, 0.08);

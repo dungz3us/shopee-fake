@@ -90,7 +90,7 @@
     background-color: white;
     display: none;
     transform-origin: 95% 0;
-    animation: Notigrow ease-in .2s;
+    animation: growth ease-in .2s;
     will-change: opaciy, transform;
     cursor: default;
 }
@@ -234,6 +234,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 12px;
 }
 .auth-form__heading{
     font-size: 2.1rem;
@@ -299,9 +301,27 @@
 
 .auth-form__socials--another{
     width: 50%;
-    background-color: var(--white-color);
+    background-color: burlywood;
 }
 .auth-form__socials-text{
     margin: 0 24px;
     font-weight: 500;
+}
+.auth-form__help{
+    display: flex;
+    justify-content: flex-end;
+}
+.auth-form__help-link{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #939393;
+}
+.auth-form__help-seperate{
+    display: block;
+    height: 22px ;
+    border-right: 1px solid var(--primary-color);
+    margin: -3px 16px 0;
+}
+.auth-form__help-forgot-password{
+    color: var(--primary-color);
 }
