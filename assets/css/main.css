@@ -402,11 +402,11 @@
 
 .header__search-cart{
     margin: 0 10px;
+    margin-top: -18px;
     width: 70px;
     text-align: center;
 }
 .header-cart-icon{
-    margin-top: -18px;
     color: white;
     font-size: 2.5rem ;
 }
