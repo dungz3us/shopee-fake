@@ -8,14 +8,17 @@
 }
 .header__navbar{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .header__navbar-list{
     list-style: none;
     padding-left: 0;
+    display: flex;
 }
 .header__navbar-item{
     padding: 0 7px;
+    
 }
 .header__navbar-item,
 .header__navbar-item-link{
@@ -25,6 +28,8 @@
     text-decoration: none;
     font-weight: 400;
     position: relative;
+    align-items: center;
+    
 }
 .header__navbar-item:hover,
 .header__navbar-item-link:hover{
@@ -196,6 +201,7 @@
     display: none;
     z-index: 20;
     animation: growth ease-in .2s;
+    transform-origin: 80% 0 ;
 
 }
 .header__language-list{
@@ -222,7 +228,68 @@
     left: 0;
     top: -20px;
 }
+.header-user{
+    position: absolute;
+    z-index: 20;
+    background-color: var(--white-color);
+    width: 150px;
+    top: 150%;
+    right: 8px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    display: none;
+    animation: growth ease-in .2s;
+    transform-origin: 60% 0 ;
+}
+.header-user::before{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    content: "";
+    display: block;
+    left: 0;
+    top: -20px;
+   
+}
+.header-user-avatar .header__navbar-item-link{
+    margin-left: 4px;
+}
+.header-user-avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-user-img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    
+}
+.on-user:hover .header-user{
+    display: block;
+}
+.header-user .arrow-up{
+    right: 49px;
+    top: -9px;
+}
+.header-user-list{
+    padding: 0;
+}
+.header-user-item{
+    list-style: none;
+}
 
+.header-user-item a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 12px ;
+}
+.header-user-item a:hover,
+.header-user-item:hover{
+    background-color: #f7f7f7;
+    color: rgb(58, 148, 93);
+}
 /* modal */
 .auth-form{
     width: 500px;
@@ -491,6 +558,7 @@
 .header-cart-list--nothing{
     padding-top: 40px ;
     padding-bottom: 30px;
+    display: none;
 }
 .header-cart-list-nothing-msg{
     display: block;
@@ -511,13 +579,13 @@
 }
 .header-cart-badge{
     position: absolute;
-    padding: 1px 6px;
+    padding: 1px 7px;
     background-color: var(--white-color);
     color: var(--primary-color);
     top: -12px;
     right: 10px;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     border: 2px solid var(--primary-color);
     border-radius: 10px;
 }
@@ -604,5 +672,6 @@
     text-decoration: none;
     color: var(--white-color);
     font-size: 1.4rem;
+    line-height: 1.4rem;
     letter-spacing: 1.1;
 }
