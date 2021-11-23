@@ -478,15 +478,14 @@
     box-shadow:  0 2px 5px #c0c0c0;
     display: none;
     cursor: default;
-    animation: growth ease-in .2s;
+    animation: growth ease-in .1s;
 
 }
 .on-cart-list:hover .header-cart-list{
     display: block;
 }
 
-.header-cart-list
-.header__search-cart-img{
+.header-cart-list .header__search-cart-img{
     width: 55%;
 }
 .header-cart-list--nothing{
@@ -506,4 +505,104 @@
     top: -10px;
     border-width: 13px 20px;
 
+}
+.header-cart-list--something{
+    padding: 0;
+}
+.header-cart-badge{
+    position: absolute;
+    padding: 1px 6px;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    top: -12px;
+    right: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+}
+.header-search-cart-heading{
+    height: 36px;
+    color: #cfcece;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 40px;
+    margin-left: 12px;
+    cursor: text;
+    text-align: left;
+}
+
+.header-cart-sthing-list{
+    list-style: none;
+    padding: 0 0 0 0px;
+    margin: 0;
+}
+.header-cart-sthing-item{
+    margin-top: 4px;
+    height: 60px;
+}
+.header-cart-sthing-item:hover{
+    background-color: #f3eeee;
+}
+.header-cart-sthing-link{
+    display: flex;
+    text-decoration: none;
+}
+.header-cart-sthing-img-wrap{
+    flex: 1;
+    height: 60px;
+    display: flex;
+    justify-content: center ;
+}
+.header-cart-sthing-img{
+    object-fit: contain;
+    margin: auto;
+    margin-left: 8px;
+    width: 45px;
+    height: 90%;
+       
+}
+.header-cart-sthing-info{
+    display: flex;
+    flex: 6;
+    padding: 8px 0;
+    
+}
+.header-cart-sthing-name{
+    flex: 3;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: left;
+    color: black;
+    padding: 0 16px;
+}
+.header-cart-sthing-price{
+    flex: 1;
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+
+}
+.header-cart-sthing-footer{
+    background-color: rgb(253, 250, 250);
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-cart-sthing-btn{
+    margin-right: 8px;
+    background-color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 3px;
+}
+.header-cart-sthing-btn:hover{
+    filter: brightness(1.2);
+}
+.header-cart-sthing-btn a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    letter-spacing: 1.1;
 }
