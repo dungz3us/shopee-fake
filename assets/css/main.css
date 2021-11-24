@@ -677,7 +677,7 @@
 }
 /* container */
 .home-page{
-    background: url("/img/background.png") center top / 100% no-repeat;
+    background: url('/img/background.png') center top / 100% no-repeat;
     min-width: 1200px;
     min-height: 2000px;
     background-color: #f5f5f5;
@@ -716,7 +716,7 @@
     margin-left: 5px;
 }
 .banner-full-img{
-    background-image: url("/img/shopee-full-banner.png");
+    background-image: url('img/shopee-full-banner.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -724,7 +724,7 @@
     background-position: center;
 }
 .banner-side-img-one{
-    background-image: url("/img/shopee-banner.png");
+    background-image: url('/img/shopee-banner.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -733,7 +733,7 @@
     flex: 1;
 }
 .banner-side-img-two{
-    background-image: url("/img/shopee-banner.png");
+    background-image: url('/img/shopee-banner.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
