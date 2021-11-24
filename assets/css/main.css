@@ -679,18 +679,19 @@
 .home-page{
     background: url("/img/background.png") center top / 100% no-repeat;
     min-width: 1200px;
-    height: 300px;
-
+    min-height: 2000px;
+    background-color: #f5f5f5;
+    padding: 30px;
 }
 .container{
     width: 1200px;
-    background-color: var(--white-color);
+    /* background-color: var(--white-color); */
     margin-left: auto;
     margin-right: auto;
 }
 .container__banner-wrap{
     max-width: 1200px;
-    height: 235px;
+    /* height: 235px; */
     margin-left: auto;
     margin-right: auto;
     background-color: transparent;
@@ -701,7 +702,7 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    background-color: transparent;
 }
 .banner-full{
     flex: 2;
@@ -744,5 +745,75 @@
 
 
 .banner-hot-word{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    width: 1200px;
+    margin: 10px auto 0;
+    min-height: 108px;
+    border-radius: 4px;
 
+}
+.banner-hot-word-link{
+    text-decoration: none;
+    outline: none;
+    border: transparent;
+}
+.banner-hot-word-wrap{
+    width: 100px;
+}
+.banner-hot-word-img{
+    width: 45px;
+    height: 45px;
+    margin: auto;  
+    margin: 18px auto 8px;  
+    border-radius: 20%;
+}
+.banner-hot-word-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    border-radius: 20%;
+    border: 1px solid #ededed;
+}
+.banner-hot-word-text{
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 0 8px;
+    color: black;
+}
+.category-list{
+    margin-top: 20px;
+    background-color: #fff;
+}
+.category-list-header{
+    font-size: 1.8rem;
+    color: #0000008a;
+    font-weight: 500;
+    line-height: 60px;
+    padding: 0 20px;
+    border-bottom: 1px solid #c5bfbf8a ;
+}
+.category-list-header p{
+    margin: 0;
+}
+.category-list-content{
+    display: flex;
+
+}
+.category-content-item{
+    list-style: none;
+}
+.category-content-item-link{
+    text-decoration: none;
+}
+.category-content-item-img{
+
+}
+.category-content-item-img img{
+
+}
+.category-content-item-text{
+    text-align: center;
 }

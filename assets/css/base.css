@@ -136,3 +136,8 @@ html {
     font-size: 1.3rem;
     padding: 0 8px;
 }
+
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+  }
