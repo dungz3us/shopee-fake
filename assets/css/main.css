@@ -677,7 +677,7 @@
 }
 /* container */
 .home-page{
-    background: url("/img/background.png") center top / 100% no-repeat;
+    background: url("img/background.png") center top / 100% no-repeat;
     min-width: 1200px;
     min-height: 2000px;
     background-color: #f5f5f5;
