@@ -986,3 +986,7 @@
     text-align: center;
     line-height: 30px;
 }
+.skinny-banner-arrow-right:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
