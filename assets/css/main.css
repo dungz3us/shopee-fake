@@ -990,3 +990,57 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+.shopee-mall{
+    background-color: #fff;
+    margin-top: 20px;
+}
+.shopee-mall-header{
+    height: 60px;
+    padding: 0 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+}
+.shopee-mall-header-title{
+    display: flex;
+    line-height: 20px;
+}
+.shopee-mall-header-title-link{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+.shopee-mall-header-title-link a{
+    color: #d0011b;
+    text-decoration: none;
+}
+.shopee-mall-header-title-desc{
+    display: flex;
+    margin-left: 16px;
+    padding-left: 16px;
+    border-left: 1px solid #d3d3d3;
+}
+.shopee-mall-header-title-desc-text{
+    padding-right: 16px;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 1.2;
+}
+.shopee-mall-header-title-desc-icon{
+    color: #d0011b;
+    margin-right: 6px;
+}
+.shopee-mall-header-addition{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.shopee-mall-header-addition-link{
+    color: #d0011b;
+    text-decoration: none;
+}
+.shopee-mall-header-addition-link-icon{
+    font-size: 1.6rem;
+    padding-left: 3px;
+}
