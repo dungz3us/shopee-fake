@@ -970,14 +970,14 @@
 }
 .skinny-banner-content img{
     width: 100%;
-    padding: 6px 8px;
+    padding: 6px 8px ;
     border-radius: 22px;
 }
 .skinny-banner-arrow-right{
     height: 30px;
     width: 30px;
     position: absolute;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 50%;
     top: 50px;
     right: 10px;
