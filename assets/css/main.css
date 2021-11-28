@@ -684,7 +684,7 @@
 .home-page{
     background: url("https://cf.shopee.vn/file/3d8d18abbf445264d2b06638653b364c") center top / 100% no-repeat;
     min-width: 1200px;
-    min-height: 2000px;
+    min-height: auto;
     background-color: #f5f5f5;
     padding: 30px;
     margin-top: 120px;
@@ -1082,7 +1082,7 @@
     line-height: 27px;
     text-align: center;
     color: #d0011b;
-
+    cursor: text;
 }
 .shopee-mall-content-arrow{
     width: 25px;
@@ -1100,4 +1100,112 @@
 .on-arrow:hover .shopee-mall-content-arrow{
     -webkit-transform: scale(2);
     transform: scale(2);
+}
+.trending-search{
+    margin-top: 25px;
+    background-color: #fff;
+}
+.trending-search-header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.trending-search-heading{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 1.7rem;
+    color: #939393;
+}
+.trending-search-addition-link{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.trending-search-addition{
+    padding: 5px 7px;
+    font-size: 1.4rem;
+}
+.trending-search-addition-icon {
+    transform: rotate(130deg);
+    font-weight: 200;
+}
+.trending-search-content{
+    background-color: #fff;
+    display: flex;
+}
+.trending-search-content-list{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.trending-search-content-item{
+    width: 20%;
+    padding-right: 10px;
+    border-right: 1px solid rgba(0,0,0,.05);
+}
+
+.trending-search-content-link{
+    text-decoration: none;
+    display: flex;
+}
+.trending-search-content-desc{
+    padding: 20px 10px 20px 20px;
+}
+.trending-search-content-name{
+    overflow: hidden;
+    width: 100%;
+    font-size: 1.4rem;
+    color: #222222;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+}
+.trending-search-content-sold{
+    overflow: hidden;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #757575;
+    margin-top: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+}
+.trending-search-content-img{
+    object-fit: contain;
+}
+.top-search{
+    margin-top: 25px;
+    background-color: #fff;
+}
+.top-search-header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.top-search-heading{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 1.7rem;
+    color: var(--primary-color)
+}
+.top-search-addition-link{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.top-search-addition{
+    padding: 5px 7px;
+    font-size: 1.4rem;
+}
+.top-search-addition-icon {
+    transform: rotate(130deg);
+    font-weight: 200;
 }
