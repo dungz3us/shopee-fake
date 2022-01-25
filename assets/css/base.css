@@ -35,7 +35,9 @@ html {
     display: flex;
     flex-wrap: wrap;
 }
-.grid__column
+.grid__column{
+    
+}
 .arrow-up{
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
